@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-  <Weather/>
+  <Weather defaultCity="New York"/>
        <footer>
       <a href="https://www.shecodes.io/" target="_blank" rel="noreferrer" title="SheCodes WeatherApp React Project">SheCodes</a> 
   {""} React Project coded in 2026 by <a href="https://www.shecodes.io/graduates/15505-emily-berner" target="_blank" rel="noreferrer" title="Emily's SheCodes profile"><strong>Emily Berner</strong></a>
