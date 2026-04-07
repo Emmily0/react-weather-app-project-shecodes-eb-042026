@@ -2,17 +2,17 @@ import React, {useState} from "react";
 import "./Weather.css";
 import axios from "axios";
 import { ThreeDots } from 'react-loader-spinner';
+import WeatherDate from "./WeatherDate";
 
 
 export default function Weather(props) {
 
 const [weatherData, setWeatherData]= useState({ready: false});
 function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
         ready: true,
         city: (response.data.city),
-        date: "Friday 12:00",
+        date: new Date(response.data.time * 1000),
         description: (response.data.condition.description),
         temperature: (response.data.temperature.current),
         iconUrl: (response.data.condition.icon_url),
@@ -35,7 +35,7 @@ if (weatherData.ready) {
                 </div>
                 <div className="col-3">
                 <input
-                type="sbumit"
+                type="submit"
                 value="Search"
                 className="btn btn-primary w-100"
                 />
@@ -44,7 +44,7 @@ if (weatherData.ready) {
             </form>
             <h1>{weatherData.city}</h1>
             <ul>
-                <li>{weatherData.date}</li>
+                <li><WeatherDate date={weatherData.date} /></li>
                 <li className="text-capitalize">{weatherData.description}</li>
             </ul>
             <div className="row mt-3">
