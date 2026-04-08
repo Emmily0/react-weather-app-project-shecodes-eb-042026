@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import "./Weather.css";
 import axios from "axios";
 import { ThreeDots } from 'react-loader-spinner';
@@ -31,6 +31,10 @@ function search (){
    axios.get(apiUrl).then(handleResponse);
     
 }
+
+useEffect(() => {
+    search();
+}, []);
 
 function handleSubmit(event){
 event.preventDefault();
@@ -69,7 +73,6 @@ if (weatherData.ready) {
             </div>
             );
 }else {
-    search();
    return (
     <ThreeDots
   height="80"
