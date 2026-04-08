@@ -45,9 +45,12 @@ border-radius: 8px;
     font-size: 16px;
     font-weight: 400;
     color: black;
-    margin-left: 2px;
-    display: inline-block;
-    position: relative;
+    margin-left: 4px;
     line-height: 1;
-    top: 8px;
+    position: relative;
+    top: -30px;
   }
+
+.Weather .unit a {
+    text-decoration: none;
+}
