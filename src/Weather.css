@@ -27,16 +27,17 @@ border-radius: 8px;
 
 }
 
-.Weather img {
-    margin-right: 10px;
-    width: 70px;
+.Weather canvas {
+    margin-right: 8px;
+    display: inline-block;
+    margin-top: 8px;
 }
 
 .Weather .temperature {
     font-weight: bold;
     color: black;
-    font-size: 64px;
-    font-weight: 400;
+    font-size: 57px;
+    font-weight: 300;
     line-height: 64px;
 }
 

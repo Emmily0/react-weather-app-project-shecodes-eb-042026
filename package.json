@@ -10,6 +10,7 @@
     "axios": "^1.14.0",
     "bootstrap": "^5.3.8",
     "react": "^19.2.4",
+    "react-animated-weather": "^4.0.1",
     "react-dom": "^19.2.4",
     "react-loader-spinner": "^8.0.2",
     "react-scripts": "5.0.1",

@@ -17,7 +17,7 @@ function handleResponse(response) {
         date: new Date(response.data.time * 1000),
         description: (response.data.condition.description),
         temperature: (response.data.temperature.current),
-        iconUrl: (response.data.condition.icon_url),
+        icon: (response.data.condition.icon),
         humidity: (response.data.temperature.humidity),
         wind: (response.data.wind.speed),
     })
