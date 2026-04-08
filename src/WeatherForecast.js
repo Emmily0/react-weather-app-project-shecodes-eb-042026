@@ -16,9 +16,13 @@ if (forecastReady) {
     return (
         <div className="WeatherForecast">
             <div className="row">
-                <div className="col">
-                 <WeatherForecastDay data={forecastData[0]} />
-                </div>
+                {forecastData.slice(1, 6).map(function(dailyForecast, index){
+                        return (
+                            <div className="col" key={index}>
+                                <WeatherForecastDay data={dailyForecast} />
+                               </div>
+                               );
+                })}
             </div>
         </div>
             );
