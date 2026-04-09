@@ -30,6 +30,7 @@ export default function App() {
       rel="noreferrer" 
       title="Emily's WeatherApp React Project on Netlify">
       Netlify</a>.{" "}
+      <br />
       Outfit imagery generated with Canva AI.
   </footer>
     </div>
