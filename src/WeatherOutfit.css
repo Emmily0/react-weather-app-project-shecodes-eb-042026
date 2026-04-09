@@ -1,0 +1,51 @@
+.outfit-wrapper {
+    border-left: 0.5px solid #e8e0d8;
+}
+
+.WeatherOutfit img {
+    height: 225px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 3px;
+}
+
+.outfit-label {
+    font-size: 12px;
+    color: #9E8E85;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 5px;
+    font-weight: 500;
+    border-top: 0.5px solid #e8e0d8;
+    padding-top: 14px;
+}
+
+.outfit-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #b76d61;
+    margin: 0 0 1px;
+}
+
+.outfit-description {
+    font-size: 13px;
+    color: #9E8E85;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.outfit-photo-credit {
+    font-size: 10px;
+    color: #af9383ac;
+    text-align: right;
+    margin-bottom: 4px;
+}
+
+.outfit-photo-credit a {
+    color: #af9383ac;
+}
+
+.outfit-recommendation {
+    margin-top: 6px;
+}

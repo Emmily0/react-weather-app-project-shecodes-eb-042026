@@ -25,33 +25,30 @@ if (unit === "celsius") {
         <span 
         className="temperature">{Math.round(props.celsius)}
         </span>
-        <span 
-        className="unit">°C | 
-        {" "}
-        <a href="/"
-        onClick={showFahrenheit}>
+        <span className="unit">
+        <span className="active-unit">°C</span>
+        {" "} | {" "}
+        <span className="inactive-unit" onClick={showFahrenheit}>
         °F
-        </a>
+        </span>    
         </span>
         </div>
     );
-} else {
+}else {
     return (
         <div className="WeatherTemperature">
         <span 
         className="temperature">{Math.round(fahrenheit())}
         </span>
-        <span 
-        className="unit">
-        <a href="/" 
+        <span className="unit">
+        <span className="inactive-unit" 
         onClick={showCelsius}>
         °C
-        </a>
-        {" "}
-        | °F
+        </span>
+        {" "} | {" "}
+        <span className="active-unit">°F</span>
         </span>
         </div>
     );
 }
-   
 }

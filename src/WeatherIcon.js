@@ -1,5 +1,5 @@
 import React from "react";
-import ReactAnimatedWeather from "react-animated-weather";
+import ReactAnimatedWeather from "react-animated-weather";
 
 
 export default function WeatherIcon(props) {
@@ -25,12 +25,13 @@ export default function WeatherIcon(props) {
     };
 
     function getColor(code) {
-        if (code.includes("night")) return "#28c4b7";
-        if (code.includes("clear")) return "goldenrod";
-        if (code.includes("few-clouds")) return "goldenrod";
-        if (code.includes("rain") || code.includes("thunder")) return "#6c8ebf";
-        if (code.includes("snow")) return "#a8d8ea";
-        return "gray";
+        if (!code) return "#cf9990";
+        if (code.includes("night")) return "#12458e";
+        if (code.includes("clear")) return "#d55f4b";
+        if (code.includes("few-clouds")) return "#b76d61";
+        if (code.includes("rain") || code.includes("thunder")) return "#b2c5e1";
+        if (code.includes("snow")) return "#bebaba";
+        return "#cf9990";
       }
    
     return (
