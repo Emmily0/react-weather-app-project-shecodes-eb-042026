@@ -14,11 +14,51 @@ const [city, setCity] = useState("");
 const [loading, setLoading] = useState(false);
 const [notFound, setNotFound] = useState(false);
 
+function formatCountry(country) {
+    const countryMap = {
+        "United Kingdom of Great Britain and Northern Ireland": "UK",
+        "United States of America": "USA",
+        "United Arab Emirates": "UAE",
+        "Russian Federation": "Russia",
+        "Korea, Republic of": "South Korea",
+        "Korea (Republic of)": "South Korea",
+        "Korea, Democratic People's Republic of": "North Korea",
+        "Korea (Democratic People's Republic of)": "North Korea",
+        "Taiwan, Province of China": "Taiwan",
+        "Iran, Islamic Republic of": "Iran",
+        "Syrian Arab Republic": "Syria",
+        "Bolivia, Plurinational State of": "Bolivia",
+        "Bolivia (Plurinational State of)": "Bolivia",
+        "Venezuela, Bolivarian Republic of": "Venezuela",
+        "Venezuela (Bolivarian Republic of)": "Venezuela",
+        "Tanzania, United Republic of": "Tanzania",
+        "Moldova, Republic of": "Moldova",
+        "Moldova (Republic of)": "Moldova",
+        "Macedonia, the Former Yugoslav Republic of": "North Macedonia",
+        "Iran (Islamic Republic of)": "Iran",
+        "Congo, the Democratic Republic of the": "DR Congo",
+        "Congo, Republic of the": "Congo",
+        "Congo (Democratic Republic of the)": "DR Congo",
+        "Lao People's Democratic Republic": "Laos",
+        "Libyan Arab Jamahiriya": "Libya",
+        "Macao Special Administrative Region": "Macao",
+        "Hong Kong Special Administrative Region": "Hong Kong",
+        "Hong Kong": "Hong Kong",
+        "Palestine, State of": "Palestine",
+        "Viet Nam": "Vietnam",
+        "Myanmar (Burma)": "Myanmar",
+        "Czechia": "Czech Republic",
+        "Türkiye": "Turkey",
+    };
+    return countryMap[country] || country;
+}
+
 function handleResponse(response) {
     if (response.data.condition) {
     setWeatherData({
         ready: true,
         city: (response.data.city),
+        country: formatCountry(response.data.country),
         coordinates: (response.data.coordinates),
         date: new Date(response.data.time * 1000),
         description: (response.data.condition.description),

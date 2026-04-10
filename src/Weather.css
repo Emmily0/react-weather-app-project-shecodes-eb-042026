@@ -79,6 +79,15 @@ box-shadow: 0 2px 20px rgba(201, 132, 122, 0.15);
     font-size: 52px;
 }
 
+.weather-country {
+    font-size: 20px;
+    font-weight: 400;
+    color: #9E8E85;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    margin-left: 4px;
+}
+
 .Weather canvas {
     display: inline-block;
     margin-right: 12px;
