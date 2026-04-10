@@ -84,7 +84,7 @@ function renderContent() {
         <div className="welcome-state">
             <p className="welcome-title">What is the weather like today</p>
             <p className="welcome-subtitle">Search your city to get the forecast and outfit recommendation.</p>
-            <img src={welcomePageOutfit} alt="outfit inspiration" className="welcome-image" />
+            <img src={welcomePageOutfit} alt="outfit inspiration" className="welcome-image"  loading="lazy" />
         </div>
     );
 }

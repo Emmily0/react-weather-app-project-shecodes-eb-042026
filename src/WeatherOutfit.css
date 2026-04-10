@@ -29,6 +29,17 @@
     margin: 0 0 1px;
 }
 
+.outfit-vogue {
+    font-family: 'Playfair Display', serif;
+    border-left: 2px solid #b76d61;
+    font-size: 13px;
+    font-style: italic;
+    color: #7a6058;
+    line-height: 1.7;
+    margin: 8px 0 10px;
+    padding-left: 16px;
+}
+
 .outfit-description {
     font-size: 13px;
     color: #9E8E85;
@@ -58,5 +69,10 @@
         border-top: 0.5px solid #e8e0d8;
         padding-top: 20px;
         margin-top: 8px;
+    }
+
+    .outfit-vogue {
+        font-size: 12px;
+        padding-left: 10px;
     }
 }
