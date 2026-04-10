@@ -222,3 +222,77 @@ box-shadow: 0 2px 20px rgba(201, 132, 122, 0.15);
     color: #9E8E85;
     font-style: italic;
 }
+
+@media (max-width: 768px) {
+    .Weather h1 {
+        font-size: 40px;
+    }
+
+    .Weather .temperature {
+        font-size: 62px;
+    }
+
+    .Weather .unit {
+        top: -20px;
+        font-size: 14px;
+    }
+
+    .Weather .search-input {
+        width: 65%;
+    }
+
+    .welcome-title {
+        font-size: 26px;
+    }
+
+    .metric-value {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Weather {
+        padding: 12px;
+    }
+
+    .Weather h1 {
+        font-size: 32px;
+    }
+
+    .Weather .temperature {
+        font-size: 52px;
+    }
+
+    .Weather .unit {
+        top: -16px;
+        font-size: 13px;
+    }
+
+    .Weather .search-input {
+        width: 70%;
+    }
+
+    .Weather form {
+        margin-bottom: 24px;
+    }
+
+    .welcome-title {
+        font-size: 18px;
+    }
+
+    .welcome-subtitle {
+        font-size: 13px;
+    }
+
+    .metric-value {
+        font-size: 18px;
+    }
+
+    .weather-metrics {
+        margin-top: 16px;
+    }
+
+    .welcome-image {
+        object-position: top left;
+    }
+}

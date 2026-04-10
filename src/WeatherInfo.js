@@ -11,7 +11,7 @@ export default function WeatherInfo(props) {
 return (
     <div className="WeatherInfo">
         <div className="row">
-            <div className="col-6">
+            <div className="col-12 col-md-6">
                 <div className="weather-date"><WeatherDate date={props.data.date} /></div>
                 <h1>{props.data.city}</h1>
                     <p className="weather-description">{props.data.description}</p>
@@ -35,7 +35,7 @@ return (
             </div>
 
    
-            <div className="col-6 outfit-wrapper">
+            <div className=" col-12 col-md-6 outfit-wrapper">
                  <WeatherOutfit icon={props.data.icon} celsius={props.data.temperature} wind={props.data.wind} feelsLike={props.data.feelsLike} showImage={true} />  
                  <WeatherOutfit icon={props.data.icon} celsius={props.data.temperature} wind={props.data.wind} feelsLike={props.data.feelsLike} showImage={false} />                
             </div>
